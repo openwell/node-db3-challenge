@@ -1,2 +1,27 @@
 ###
-GET http://localhost:5000/
+GET http://localhost:5000/api/schemes
+
+###
+GET http://localhost:5000/api/schemes/1
+
+###
+GET http://localhost:5000/api/schemes/1/steps
+
+###
+POST http://localhost:5000/api/schemes/ HTTP/1.1
+Content-Type: application/json
+
+{
+    "scheme_name": "Game of Thrones"
+}
+
+###
+PUT http://localhost:5000/api/schemes/6 HTTP/1.1
+Content-Type: application/json
+
+{
+    "scheme_name": "How to Get Away with Murder1"
+}
+
+###
+DELETE  http://localhost:5000/api/schemes/6
